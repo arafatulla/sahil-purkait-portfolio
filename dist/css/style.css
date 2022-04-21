@@ -283,7 +283,7 @@ header .primary-menu .mobile-menu-btn div:not(:last-child) {
   background-repeat: no-repeat;
 }
 .intro .intro-content {
-  height: 320px;
+  height: 30rem;
   background-attachment: fixed;
   display: flex;
   justify-content: center;
@@ -297,7 +297,7 @@ header .primary-menu .mobile-menu-btn div:not(:last-child) {
   left: 0;
   right: 0;
   bottom: 0;
-  box-shadow: inset 0 0 125rem rgba(250, 243, 62, 0.5);
+  box-shadow: inset 0 0 125rem rgba(250, 243, 62, 0.75);
   filter: blur(0.625rem);
 }
 .intro .intro-content .content-description {
@@ -312,6 +312,9 @@ header .primary-menu .mobile-menu-btn div:not(:last-child) {
     justify-content: start;
     align-items: center;
     margin-left: 4rem;
+  }
+  header .page-title h1 {
+    font-size: 1.25rem;
   }
   header .primary-menu {
     justify-content: end;
@@ -343,5 +346,22 @@ header .primary-menu .mobile-menu-btn div:not(:last-child) {
   }
   header .primary-menu .mobile-menu-btn {
     display: none;
+  }
+
+  .intro {
+    background-image: url(/elements/images/bg1.jpg);
+  }
+  .intro .intro-content {
+    width: 50%;
+    height: 35rem;
+  }
+  .intro .intro-content .content-title {
+    padding-bottom: 2rem;
+  }
+  .intro .intro-content .content-title h2 {
+    font-size: 2rem;
+  }
+  .intro .intro-content .content-description p {
+    font-size: 1.1rem;
   }
 }/*# sourceMappingURL=style.css.map */
