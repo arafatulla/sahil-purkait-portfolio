@@ -1,0 +1,140 @@
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0px 8px 0;
+  height: 40px;
+  background-color: $main-clr;
+  .page-title {
+    display: flex;
+    justify-content: start;
+    padding-left: 16px;
+    align-items: center;
+    h1 {
+      transition: color 300ms ease-in-out;
+    }
+  }
+  .mobile-menu {
+    position: absolute;
+    transform: translateX(-100%);
+    transition: transform 300ms ease-in-out;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: $main-clr;
+    padding: 56px 16px 16px 16px;
+    ul {
+      width: 100%;
+      height: 100%;
+      li {
+        width: 100%;
+        padding-top: 16px;
+      }
+    }
+  }
+  .primary-menu {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 16px;
+    nav {
+      display: none;
+    }
+    .mobile-menu-btn {
+      div {
+        width: .9375rem;
+        height: .125rem;
+        background-color: black;
+        transform-origin: center center;
+        animation-duration: 300ms;
+        animation-fill-mode: forwards;
+      }
+      div:not(:last-child) {
+        margin-bottom: .125rem;
+      }
+    }
+  }
+}
+.active {
+  .page-title {
+    z-index: 2;
+    h1 {
+      color: $main-clr;
+    }
+  }
+  .mobile-menu {
+    transform: translateX(0%);
+  }
+  .primary-menu {
+    .mobile-menu-btn {
+      div {
+        z-index: 2;
+      }
+      div:first-child {
+        animation-name: first-open;
+      }
+      div:nth-child(2) {
+        animation-name: middle-open;
+      }
+      div:last-child {
+        animation-name: last-open;
+      }
+    }
+  }
+}
+.close {
+  .page-title {
+    z-index: 2;
+    h1 {
+      color: black;
+    }
+  }
+  .mobile-menu {
+    transform: translateX(-100%);
+  }
+  .primary-menu {
+    .mobile-menu-btn {
+      div {
+        z-index: 2;
+      }
+      div:first-child {
+        animation-name: first-close;
+      }
+      div:nth-child(2) {
+        animation-name: middle-close;
+      }
+      div:last-child {
+        animation-name: last-close;
+      }
+    }
+  }
+}
+.intro {
+  width: 100%;
+  background-image: url(/elements/images/bg3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  .intro-content {
+    height: 320px;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      box-shadow: inset 0 0 125rem rgba(250, 243, 62, 0.5);
+      filter: blur(.625rem);
+    }
+    .content-description{
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+    }
+  }
+}
