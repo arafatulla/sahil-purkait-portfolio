@@ -1,0 +1,22 @@
+.about__container .heading {
+  width: 100%;
+  height: 7rem;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about__container .info {
+  margin-top: 1rem;
+}
+.about__container .info div:first-child {
+  margin: 0 4rem;
+  height: 20rem;
+  border: 5px solid yellow;
+  position: relative;
+}
+.about__container .info div:first-child img {
+  position: absolute;
+  top: -1.5rem;
+  left: -1.5rem;
+}/*# sourceMappingURL=style.css.map */

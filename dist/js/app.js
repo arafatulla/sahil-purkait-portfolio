@@ -11,4 +11,5 @@ menuBtn.addEventListener('click', ()=>{
         header.classList.remove('active');
         header.classList.add('close');
     }
-})
+});
+
