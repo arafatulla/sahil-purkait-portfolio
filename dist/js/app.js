@@ -12,4 +12,3 @@ menuBtn.addEventListener('click', ()=>{
         header.classList.add('close');
     }
 });
-
