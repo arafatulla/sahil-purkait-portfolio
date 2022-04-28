@@ -10,3 +10,15 @@ const listItems =
 
 mobileMenu.innerHTML = listItems;
 desktopMenu.innerHTML = listItems;
+
+
+
+
+// const exp = document.querySelector('#expYear');
+// let d = new Date();
+// let srtYear = 2015;
+// let crtYear = d.getFullYear();
+// let expYear = parseInt(crtYear - srtYear);
+
+// exp.innerHTML = expYear;
+// console.log(expYear);
