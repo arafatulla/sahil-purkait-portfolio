@@ -26,30 +26,35 @@
   padding: 2rem 0.4rem;
 }
 
-#work {
+#stats {
   background-color: #FAF33E;
   color: black;
 }
-#work .container {
+#stats .container {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-#work .heading {
+#stats .heading {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-#work .heading h4 {
+#stats .heading h4 {
   font-size: 1.3rem;
 }
-#work .heading p {
+#stats .heading p {
   font-size: 0.8rem;
 }
-#work .channels div .stats p {
+#stats .channels div {
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+#stats .channels div .stats p {
   font-family: "Playfair Display", serif;
 }
-#work .channels div .link a {
+#stats .channels div .link a {
   background-color: #FAF33E;
   color: black;
   font-size: 1rem;
@@ -174,6 +179,15 @@ footer section {
   .about__container .info div:last-child {
     padding: 0rem 7rem;
     padding-top: 6rem;
+  }
+
+  #stats {
+    margin-top: 2rem;
+  }
+  #stats .channels {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
   }
 
   .contact-form {
