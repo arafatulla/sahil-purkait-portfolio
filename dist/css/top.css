@@ -302,7 +302,6 @@ header .primary-menu .mobile-menu-btn div:not(:last-child) {
 
 .intro {
   width: 100%;
-  height: 95vh;
   background-image: url(/elements/images/bg3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
