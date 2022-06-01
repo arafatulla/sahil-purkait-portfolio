@@ -54,10 +54,21 @@
 #stats .channels div .stats p {
   font-family: "Playfair Display", serif;
 }
-#stats .channels div .link a {
+#stats .channels div a {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.7rem 1rem;
+}
+#stats .channels div .link {
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 0.5rem 0rem;
   background-color: #FAF33E;
   color: black;
-  font-size: 1rem;
+}
+#stats .channels div .link:hover {
+  color: white;
+  background-color: black;
 }
 
 .gallery {
