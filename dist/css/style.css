@@ -57,20 +57,16 @@
 #stats .channels div a {
   width: 100%;
   font-size: 1rem;
-  padding: 0.7rem 1rem;
-}
-#stats .channels div .link {
+  padding: 0.5rem 1rem;
   border: 1px solid black;
   border-radius: 1rem;
-  padding: 0.5rem 0rem;
   background-color: #FAF33E;
   color: black;
 }
-#stats .channels div .link:hover {
+#stats .channels div a:hover {
   color: white;
   background-color: black;
 }
-
 .gallery {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -283,6 +279,8 @@ footer h6:hover {
 
   #stats {
     margin-top: 2rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
   #stats .channels {
     display: flex;

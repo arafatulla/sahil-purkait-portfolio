@@ -1,11 +1,10 @@
 const mobileMenu = document.querySelector('#mobile-menu-list')
 const desktopMenu = document.querySelector('#desktop-menu-list')
-const footerMenu = document.querySelector('#footer-menu-list')
 
 const listItems = 
 `<li><a href="#about">About</a></li>
 <li><a href="#stats">Stats & Links</a></li>
-<li><a href="https://sahil-purkait.blogspot.com">Blog</a></li>
+<li><a href="https://sahil-purkait.blogspot.com" target="_blank">Blog</a></li>
 <li><a href="#contact">Contact</a></li>`;
 
 mobileMenu.innerHTML = listItems;
